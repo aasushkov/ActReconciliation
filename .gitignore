@@ -21,14 +21,6 @@ src/main/resources/hibernate.properties
 # .idea/dynamic.xml
 # .idea/uiDesigner.xml
 
-# Gradle:
-target/
-# .idea/gradle.xml
-# .idea/libraries
-
-# Mongo Explorer plugin:
-# .idea/mongoSettings.xml
-
 ## File-based project format:
 *.ipr
 *.iws

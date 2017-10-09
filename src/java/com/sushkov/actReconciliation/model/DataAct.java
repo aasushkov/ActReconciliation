@@ -1,4 +1,4 @@
-package Model;
+package com.sushkov.actReconciliation.model;
 
 /**
  * Created by sushkov on 02.06.2017.

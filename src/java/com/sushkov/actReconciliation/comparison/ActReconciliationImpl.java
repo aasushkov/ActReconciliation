@@ -1,6 +1,6 @@
-package Comparison;
+package com.sushkov.actReconciliation.comparison;
 
-import Model.DataAct;
+import com.sushkov.actReconciliation.model.DataAct;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class ActReconciliationLogic {
+public class ActReconciliationImpl {
 
     private static XSSFSheet createXLSheet(String filePath) throws IOException {
         XSSFWorkbook actRec = new XSSFWorkbook(new FileInputStream(filePath));
@@ -21,13 +21,13 @@ public class ActReconciliationLogic {
 
     public static List<DataAct> readExcel() throws IOException {
 
-        XSSFSheet xssfSheet = createXLSheet("D:\\Гастроном ТК.XLSX");
+        XSSFSheet xssfSheet = createXLSheet("filepath");
 
         String docNumString = "";
         double debet;
         double credit;
         int lastRow = xssfSheet.getLastRowNum();
-        List<DataAct> dataActList = new ArrayList<DataAct>();
+        List<DataAct> dataActList = new ArrayList<>();
 
         for(int i = 14; i < lastRow; i++)
         {
